@@ -32,12 +32,14 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/question1title"/>
+                    android:text="@string/question1title"
+                    style="@style/questionTitle"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/question1"/>
+                    android:text="@string/question1"
+                    style="@style/questionAndAnswers"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -89,12 +91,14 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/question2title"/>
+                    android:text="@string/question2title"
+                    style="@style/questionTitle"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/question2"/>
+                    android:text="@string/question2"
+                    style="@style/questionAndAnswers"/>
 
                 <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="fill_parent"
@@ -120,12 +124,14 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/question3title"/>
+                    android:text="@string/question3title"
+                    style="@style/questionTitle"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/question3"/>
+                    android:text="@string/question3"
+                    style="@style/questionAndAnswers"/>
                 <EditText
                     android:id="@+id/answerLaraLastName"
                     android:layout_width="fill_parent"
@@ -138,12 +144,15 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/question4title"/>
+                    android:text="@string/question4title"
+                    style="@style/questionTitle"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/question4"/>
+                    android:text="@string/question4"
+                    style="@style/questionAndAnswers"/>
+
                 <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
@@ -169,12 +178,14 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/question5title"/>
+                    android:text="@string/question5title"
+                    style="@style/questionTitle"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/question5"/>
+                    android:text="@string/question5"
+                    style="@style/questionAndAnswers"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -205,6 +216,21 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/answerLOL"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/checkboxQuest5BrutalLegend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/answerBrutalLegend"/>
                 </LinearLayout>
 
                 <Button
