@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Games Quiz</string>
+    <string name="question1title">Question 1</string>
+    <string name="question2title">Question 2</string>
+    <string name="question3title">Question 3</string>
+    <string name="question4title">Question 4</string>
+    <string name="question5title">Question 5</string>
+    <string name="question1">In which games appears the famous video game character Mario?</string>
+    <string name="answerMario">Mario</string>
+</resources>
