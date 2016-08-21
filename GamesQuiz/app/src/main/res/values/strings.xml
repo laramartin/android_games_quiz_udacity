@@ -15,4 +15,6 @@
     <string name="answer1999">1999</string>
     <string name="question3">What\'s the last name of the most famous Lara?</string>
     <string name="LastNameLaraHint">Most famous Lara\'s last name</string>
+    <string name="question4">\"The cake is a lie\" is a famous quote from the game:</string>
+    <string name="answerBorderlands">Borderlands</string>
 </resources>
