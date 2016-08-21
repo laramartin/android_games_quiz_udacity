@@ -17,9 +17,10 @@
     <string name="LastNameLaraHint">Most famous Lara\'s last name</string>
     <string name="question4">\"The cake is a lie\" is a famous quote from the game:</string>
     <string name="answerBorderlands">Borderlands</string>
-    <string name="question5">In which game would you hear: \"Legendary!\"?</string>
-    <string name="answerLOL">League of Legends</string>
-    <string name="answerZelda">The Legend of Zelda</string>
+    <string name="question5">Which are Nintendo consoles?</string>
     <string name="submit">Submit</string>
-    <string name="answerBrutalLegend">Brutal Legend</string>
+    <string name="answerBioShock">BioShock</string>
+    <string name="answerGameBoy">Game Boy</string>
+    <string name="answerPSP">PSP</string>
+    <string name="answerWii">Wii</string>
 </resources>

@@ -160,7 +160,7 @@
                     <RadioButton android:id="@+id/radio_bioShock"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/answer1979"
+                        android:text="@string/answerBioShock"
                         android:onClick=""/>
                     <RadioButton android:id="@+id/radio_portal"
                         android:layout_width="wrap_content"
@@ -192,7 +192,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <CheckBox
-                        android:id="@+id/checkboxQuest5Zelda"
+                        android:id="@+id/checkboxQuest5GameBoy"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         />
@@ -200,7 +200,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/answerZelda"/>
+                        android:text="@string/answerGameBoy"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -208,14 +208,14 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <CheckBox
-                        android:id="@+id/checkboxQuest5LOL"
+                        android:id="@+id/checkboxQuestPSP"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/answerLOL"/>
+                        android:text="@string/answerPSP"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -223,17 +223,18 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <CheckBox
-                        android:id="@+id/checkboxQuest5BrutalLegend"
+                        android:id="@+id/checkboxQuest5Wii"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/answerBrutalLegend"/>
+                        android:text="@string/answerWii"/>
                 </LinearLayout>
 
                 <Button
+                    android:id="@+id/submitButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/submit"/>
