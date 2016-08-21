@@ -232,11 +232,11 @@
                     android:id="@+id/submitButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/submit"/>
+                    android:text="@string/submit"
+                    android:layout_gravity="center_horizontal"/>
             </LinearLayout>
 
         </ScrollView>
-
 
     </android.support.v7.widget.CardView>
 
