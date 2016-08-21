@@ -107,18 +107,15 @@
                     <RadioButton android:id="@+id/radio_1979"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/answer1979"
-                        android:onClick=""/>
+                        android:text="@string/answer1979"/>
                     <RadioButton android:id="@+id/radio_1989"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/answer1989"
-                        android:onClick=""/>
+                        android:text="@string/answer1989"/>
                     <RadioButton android:id="@+id/radio_1999"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/answer1999"
-                        android:onClick=""/>
+                        android:text="@string/answer1999"/>
                 </RadioGroup>
 
                 <TextView
@@ -161,18 +158,15 @@
                     <RadioButton android:id="@+id/radio_bioShock"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/answerBioShock"
-                        android:onClick=""/>
-                    <RadioButton android:id="@+id/radio_portal"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/answerPortal"
-                        android:onClick=""/>
+                        android:text="@string/answerBioShock"/>
                     <RadioButton android:id="@+id/radio_borderlands"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/answerBorderlands"
-                        android:onClick=""/>
+                        android:text="@string/answerBorderlands"/>
+                    <RadioButton android:id="@+id/radio_portal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/answerPortal"/>
                 </RadioGroup>
 
 

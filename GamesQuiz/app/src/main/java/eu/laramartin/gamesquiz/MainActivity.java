@@ -1,30 +1,32 @@
 package eu.laramartin.gamesquiz;
 
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     Button submit;
+    int correctAnswers = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button submit = (Button) findViewById(R.id.submitButton);
+
+        submit = (Button) findViewById(R.id.submitButton);
         submit.setOnClickListener(submitButtonOnClickListener);
     }
-
-    int correctAnswers = 0;
-
-
-    // final scores displayed in a toast
 
     private void checkQuestionOneAnswers(){
         CheckBox questionOneMario = (CheckBox) findViewById(R.id.checkboxQuest1AnswerMario);
@@ -35,6 +37,19 @@ public class MainActivity extends AppCompatActivity {
         boolean isQuestionOnePortalChecked = questionOnePortal.isChecked();
 
         if (isQuestionOneMarioChecked && isQuestionOneDonkeyChecked && !isQuestionOnePortalChecked){
+            correctAnswers += 1;
+        }
+    }
+
+    private void checkQuestionTwoAnswers(){
+        RadioButton radioButton1979 = (RadioButton) findViewById(R.id.radio_1979);
+        RadioButton radioButton1989 = (RadioButton) findViewById(R.id.radio_1989);
+        RadioButton radioButton1999 = (RadioButton) findViewById(R.id.radio_1999);
+        boolean isQuestionTwo1979Checked = radioButton1979.isChecked();
+        boolean isQuestionTwo1989Checked = radioButton1989.isChecked();
+        boolean isQuestionTwo1999Checked = radioButton1999.isChecked();
+
+        if (!isQuestionTwo1979Checked && isQuestionTwo1989Checked && !isQuestionTwo1999Checked){
             correctAnswers += 1;
         }
     }
@@ -52,6 +67,21 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    private void checkQuestionFourAnswers(){
+        RadioButton radioButtonBioShock = (RadioButton) findViewById(R.id.radio_bioShock);
+        RadioButton radioButtonPortal = (RadioButton) findViewById(R.id.radio_portal);
+        RadioButton radioButtonBorderlands = (RadioButton) findViewById(R.id.radio_borderlands);
+        boolean isQuestionTwoBioShockChecked = radioButtonBioShock.isChecked();
+        boolean isQuestionTwoPortalChecked = radioButtonPortal.isChecked();
+        boolean isQuestionTwoBorderlandsChecked = radioButtonBorderlands.isChecked();
+
+        if (!isQuestionTwoBioShockChecked && !isQuestionTwoBorderlandsChecked &&
+                isQuestionTwoPortalChecked){
+            correctAnswers += 1;
+        }
+
+    }
+
     private void checkQuestionFiveAnswers(){
         CheckBox questionFiveGameBoy = (CheckBox) findViewById(R.id.checkboxQuest5GameBoy);
         CheckBox questionFivePSP = (CheckBox) findViewById(R.id.checkboxQuestPSP);
@@ -67,7 +97,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void checkAllQuestions(){
         checkQuestionOneAnswers();
+        checkQuestionTwoAnswers();
         checkQuestionThreeAnswer();
+        checkQuestionFourAnswers();
         checkQuestionFiveAnswers();
     }
 
