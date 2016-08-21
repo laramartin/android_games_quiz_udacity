@@ -9,4 +9,10 @@
     <string name="answerMario">Mario</string>
     <string name="answerDonkeyKong">Donkey Kong</string>
     <string name="answerPortal">Portal</string>
+    <string name="question2">Which year was the game boy released?</string>
+    <string name="answer1989">1989</string>
+    <string name="answer1979">1979</string>
+    <string name="answer1999">1999</string>
+    <string name="question3">What\'s the last name of the most famous Lara?</string>
+    <string name="LastNameLaraHint">Most famous Lara\'s last name</string>
 </resources>

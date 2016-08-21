@@ -85,11 +85,47 @@
                 android:layout_height="wrap_content"
                 android:text="@string/question2title"/>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question2"/>
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton android:id="@+id/radio_1979"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answer1979"
+                    android:onClick=""/>
+                <RadioButton android:id="@+id/radio_1989"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answer1989"
+                    android:onClick=""/>
+                <RadioButton android:id="@+id/radio_1999"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/answer1999"
+                    android:onClick=""/>
+            </RadioGroup>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/question3title"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question3"/>
+            <EditText
+                android:id="@+id/answerLaraLastName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/LastNameLaraHint"
+                android:inputType="text" />
 
 
             <TextView
