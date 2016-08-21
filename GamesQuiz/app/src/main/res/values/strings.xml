@@ -7,4 +7,6 @@
     <string name="question5title">Question 5</string>
     <string name="question1">In which games appears the famous video game character Mario?</string>
     <string name="answerMario">Mario</string>
+    <string name="answerDonkeyKong">Donkey Kong</string>
+    <string name="answerPortal">Portal</string>
 </resources>
