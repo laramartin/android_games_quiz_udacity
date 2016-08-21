@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button submit = (Button) findViewById(R.id.submitButton);
-        submit.setOnClickListener(submitButtonOnClikListener);
+        submit.setOnClickListener(submitButtonOnClickListener);
     }
 
     int correctAnswers = 0;
@@ -38,10 +39,48 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    final View.OnClickListener submitButtonOnClikListener = new View.OnClickListener() {
+    private String getQuestionThreeUserInput() {
+        EditText userInputLastName = (EditText) findViewById(R.id.answerInputUserLastName);
+        String name = userInputLastName.getText().toString();
+        return name;
+    }
+
+    private void checkQuestionThreeAnswer(){
+        String name = getQuestionThreeUserInput();
+        if (name.trim().equalsIgnoreCase("croft")){
+            correctAnswers += 1;
+        }
+    }
+
+    private void checkQuestionFiveAnswers(){
+        CheckBox questionFiveGameBoy = (CheckBox) findViewById(R.id.checkboxQuest5GameBoy);
+        CheckBox questionFivePSP = (CheckBox) findViewById(R.id.checkboxQuestPSP);
+        CheckBox questionFiveWii = (CheckBox) findViewById(R.id.checkboxQuest5Wii);
+        boolean isQuestionFiveGameBoyChecked = questionFiveGameBoy.isChecked();
+        boolean isQuestionFivePSPChecked = questionFivePSP.isChecked();
+        boolean isQuestionFiveWiiChecked = questionFiveWii.isChecked();
+
+        if (isQuestionFiveGameBoyChecked && !isQuestionFivePSPChecked && isQuestionFiveWiiChecked){
+            correctAnswers += 1;
+        }
+    }
+
+    private void checkAllQuestions(){
+        checkQuestionOneAnswers();
+        checkQuestionThreeAnswer();
+        checkQuestionFiveAnswers();
+    }
+
+    private void resetCounterCorrectAnswers(){
+        correctAnswers = 0;
+    }
+
+    final View.OnClickListener submitButtonOnClickListener = new View.OnClickListener() {
         public void onClick(final View v){
-            checkQuestionOneAnswers();
-            Toast.makeText(MainActivity.this, "Correct Answers: " + correctAnswers + "/5", Toast.LENGTH_LONG).show();
+            checkAllQuestions();
+            Toast.makeText(MainActivity.this, "Correct Answers: " + correctAnswers + "/5",
+                    Toast.LENGTH_LONG).show();
+            resetCounterCorrectAnswers();
         }
     };
 
