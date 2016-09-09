@@ -6,6 +6,7 @@
 
 # Description 
 - 5 Question's quizz about Video Games
+- It had to contain radio buttons, checkboxes and EditText 
 - Final score is shown with a Toast
 
 # Screenshot
