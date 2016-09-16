@@ -10,4 +10,4 @@
 - Final score is shown with a Toast
 
 # Screenshot
-<img src="https://raw.githubusercontent.com/laramartin/android_games_quiz_udacity/master/Screenshot_20160821-144414.png" width="300"/>
+<img src="https://raw.githubusercontent.com/laramartin/android_games_quiz_udacity/master/GamesQuiz/device-2016-09-16-192109.png" width="300"/>
