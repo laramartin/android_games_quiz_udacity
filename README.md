@@ -4,6 +4,9 @@
 - [Android Basics Nanodegree at Udacity.com](https://www.udacity.com/course/android-basics-nanodegree-by-google--nd803).
 - [Image source](https://d13yacurqjgara.cloudfront.net/users/59522/screenshots/1917541/attachments/329089/retro-pattern.png)
 
+## Android Goodies
+- View items: Checkboxes, radio buttons and EditText.
+
 # Description 
 - 5 Question's quizz about Video Games
 - It had to contain radio buttons, checkboxes and EditText 
